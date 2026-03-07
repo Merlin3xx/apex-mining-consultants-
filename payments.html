@@ -1,0 +1,133 @@
+<!-- payments.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Crypto Payment Options – Apex Mining Consultants</title>
+    <meta name="description" content="Manual cryptocurrency payment instructions for Bitcoin mining advisory services. BTC, LTC, ETH, USDT, XMR accepted.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">◆</span>
+                <span class="logo-text">Apex Mining</span>
+            </a>
+            <button class="mobile-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="course.html" class="nav-link">Course</a></li>
+                <li><a href="machines.html" class="nav-link">Hardware</a></li>
+                <li><a href="payments.html" class="nav-link active">Payments</a></li>
+                <li><a href="#support" class="nav-link">Support</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Manual Crypto Payment Options</h1>
+            <p>Secure, private, decentralized settlement</p>
+        </div>
+    </header>
+
+    <section class="section payments-detail">
+        <div class="container">
+            <div class="payment-intro">
+                <p>All payments are processed manually via cryptocurrency transfer. After confirming your service selection via email or Telegram, send the exact amount to the address displayed below for your selected coin.</p>
+                <p><strong>Important:</strong> Include your order reference or name in the transaction memo where possible. All sales are final once confirmed on-chain.</p>
+            </div>
+
+            <div class="payment-selector">
+                <label for="coin-select" class="selector-label">Select cryptocurrency:</label>
+                <select id="coin-select" class="coin-dropdown">
+                    <option value="">Choose coin...</option>
+                    <option value="btc">Bitcoin (BTC)</option>
+                    <option value="ltc">Litecoin (LTC)</option>
+                    <option value="eth">Ethereum (ERC-20)</option>
+                    <option value="usdt">USDT (ERC-20)</option>
+                    <option value="xmr">Monero (XMR)</option>
+                </select>
+            </div>
+
+            <div id="address-display" class="address-box" style="display: none;">
+                <div class="address-header">
+                    <h3 id="coin-name">Cryptocurrency</h3>
+                    <span class="network-badge" id="network-badge">Network</span>
+                </div>
+                <div class="address-field">
+                    <label>Send to:</label>
+                    <code id="coin-address" class="address-code">ADDRESS_PLACEHOLDER</code>
+                    <button class="copy-btn" onclick="copyAddress()">Copy</button>
+                </div>
+                <div class="payment-notes">
+                    <p>⚠️ <strong>Verify address and network carefully.</strong> Transactions sent to wrong addresses or networks cannot be recovered.</p>
+                    <p>📧 <strong>Confirmation required:</strong> Email transaction ID to support@apexminingconsultants.com or Telegram @ApexMiningSupport after sending.</p>
+                    <p>⏱️ <strong>Processing:</strong> Services activated within 24 hours of confirmation.</p>
+                </div>
+            </div>
+
+            <div class="payment-alternative">
+                <h3>Alternative Payment Methods</h3>
+                <p>Other cryptocurrencies or stablecoins available by request. Contact support to arrange:</p>
+                <ul>
+                    <li>USDC (Ethereum, Tron, Solana networks)</li>
+                    <li>Bitcoin Lightning Network (for smaller amounts)</li>
+                    <li>Large-scale wire transfers (>$50k service packages)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section support" id="support">
+        <div class="container">
+            <h2 class="section-title">Customer Support</h2>
+            <div class="support-grid">
+                <div class="support-info">
+                    <h3>Contact Channels</h3>
+                    <p><strong>Email:</strong> support@apexminingconsultants.com</p>
+                    <p><strong>Telegram:</strong> @ApexMiningSupport</p>
+                    <p><strong>Response time:</strong> Within 24 hours</p>
+                </div>
+                <div class="support-form">
+                    <h3>Send Message</h3>
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="4" placeholder="How can we help?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">◆</span>
+                    <span>Apex Mining Consultants</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            <p class="copyright">© 2026 Apex Mining Consultants. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
